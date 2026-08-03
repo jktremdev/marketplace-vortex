@@ -1,0 +1,14 @@
+-- Criação da tabela de anúncios
+
+CREATE TABLE anuncios (
+    id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    descricao TEXT NOT NULL,
+    categoria VARCHAR(50) NOT NULL,
+    tipo VARCHAR(10) NOT NULL,
+    preco NUMERIC(10,2),
+    imagem TEXT NOT NULL,
+    status VARCHAR(20) NOT NULL DEFAULT 'ATIVO',
+    criado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
