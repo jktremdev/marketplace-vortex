@@ -12,9 +12,13 @@
   "type": "module",
   "dependencies": {
     "cors": "^2.8.6",
+<<<<<<< HEAD
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "pg": "^8.22.0",
+=======
+    "express": "^5.2.1",
+>>>>>>> af699ae11209dab954d1af19912a7131a46df3dc
     "sqlite3": "^6.0.1"
   },
   "devDependencies": {
